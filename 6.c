@@ -12,7 +12,7 @@ int main() {
     rango2 = primos_en_rango(2000, 3000);
     rango3 = primos_en_rango(3000, 4000);
     
-    printf("\n En rango [1000-2000] hay %d numeros primos, en el rango [2000-3000] hay %d numeros primos y en el rango [3000-4000] hay %d numeros primos", rango1, rango2, rango3);
+    printf("En rango [1000-2000] hay %d numeros primos, en el rango [2000-3000] hay %d numeros primos y en el rango [3000-4000] hay %d numeros primos\n", rango1, rango2, rango3);
     return 0;
 }
 
