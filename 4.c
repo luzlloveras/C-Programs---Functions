@@ -7,12 +7,12 @@ int es_primo(int);
 
 int main() {
     int ingreso;
-    printf("\n Ingrese numero:");
+    printf("Ingrese numero:\n");
     scanf("%d", &ingreso);
     if(es_primo(ingreso)== 1){
-        printf("\n %d es primo", ingreso);
+        printf("%d es primo\n", ingreso);
     }
-    else printf("\n %d no es primo", ingreso);
+    else printf("%d no es primo\n", ingreso);
 }
 
 // si los numeros son divisibles retorna 1, caso contrario retona 0
