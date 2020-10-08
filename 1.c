@@ -5,7 +5,7 @@ int main () {
     a = 0;
     for (i=1;i<4;i++) {
         a++;
-        printf("\n a del bloque es %d", a);
+        printf("a del bloque es %d\n", a);
     }
-    printf("\n %d", a);
+    printf("%d\n", a);
 }
