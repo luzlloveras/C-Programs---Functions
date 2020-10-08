@@ -11,7 +11,7 @@ int main() {
     while(perfectos<5) {
         for(j=1;j<9000;j++) {
             if(es_perfecto(j)==1)
-                printf("\n %d es un numero perfecto", j);
+                printf("%d es un numero perfecto\n", j);
                 perfectos++;
         }
     }
