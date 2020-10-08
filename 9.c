@@ -11,10 +11,10 @@ int main() {
 
 void next_ASCII() {
     char x;
-    printf("\n Ingrese un caracter:");
+    printf("Ingrese un caracter:\n");
     scanf("%c", &x);
     x=(int)x;
     x+=1;
     x=(char)x;
-    printf("\n El codigo ASCII siguiente al recibido es:%c", x);
+    printf("El codigo ASCII siguiente al recibido es:%c\n", x);
 }
