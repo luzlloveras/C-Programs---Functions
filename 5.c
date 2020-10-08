@@ -8,10 +8,10 @@ int primos_en_rango(int, int);
 int main() {
     int ingreso1, ingreso2, cant_primos;
 
-    printf("\n Ingrese dos numeros:");
+    printf("Ingrese dos numeros:\n");
     scanf("%d %d", &ingreso1, &ingreso2);
     cant_primos = primos_en_rango(ingreso1, ingreso2);
-    printf("\n La cantidad de primos encontrandos en el rango entre %d y %d es: %d", ingreso1, ingreso2, cant_primos);
+    printf("La cantidad de primos encontrandos en el rango entre %d y %d es: %d\n", ingreso1, ingreso2, cant_primos);
 
     return 0;
 }
