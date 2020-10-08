@@ -10,7 +10,7 @@ int main() {
     x = 2;
     y = 7;
     potencia = calcular_potencia(x, y);
-    printf("\n La potencia de x^y es: %d", potencia);
+    printf("La potencia de x^y es: %d\n", potencia);
 }
 
 int calcular_potencia(x, y) {
