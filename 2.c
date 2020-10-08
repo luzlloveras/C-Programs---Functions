@@ -8,9 +8,9 @@ int main() {
     int a;
     a = 1857;
     funcion(a);
-    printf("\n Main %d", a);
+    printf("Main %d\n", a);
 }
 
 void funcion(int a) {
-    printf("\n Funcion %d", a);
+    printf("Funcion %d\n", a);
 }
