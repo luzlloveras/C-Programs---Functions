@@ -8,8 +8,8 @@ int main() {
     int ingreso;
     scanf("%d", &ingreso);
 
-    if(es_primo(ingreso) == 1) printf("\n %d es primo", ingreso);
-    else printf("\n %d no es primo", ingreso);
+    if(es_primo(ingreso) == 1) printf("%d es primo\n", ingreso);
+    else printf("%d no es primo\n", ingreso);
 }
 
 // retorna 1 si numero es divisble por divisor, caso contrario retorna 0
