@@ -7,13 +7,13 @@ int son_amigos(int, int);
 int main() {
     int ingreso1, ingreso2;
     
-    printf("\n Ingrese dos numeros");
+    printf("Ingrese dos numeros\n");
     scanf("%d %d", &ingreso1, &ingreso2);
 
     if(son_amigos(ingreso1, ingreso2)==1)
-        printf("\n El par %d y %d son amigos", ingreso1, ingreso2);
+        printf("El par %d y %d son amigos\n", ingreso1, ingreso2);
     else
-        printf("\n El par %d y %d NO son amigos", ingreso1, ingreso2);
+        printf("El par %d y %d NO son amigos\n", ingreso1, ingreso2);
     
     return 0;
 }
