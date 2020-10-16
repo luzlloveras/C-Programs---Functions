@@ -4,13 +4,16 @@ un entero a la funcion y recibirlo en un parametro tipo char */
 #include <stdio.h>
 void funcion(int);
 
-int main() {
+int main() 
+{
     int a;
     a = 1857;
     funcion(a);
     printf("Main %d\n", a);
+    return 0;
 }
 
-void funcion(int a) {
+void funcion(int a) 
+{
     printf("Funcion %d\n", a);
 }
