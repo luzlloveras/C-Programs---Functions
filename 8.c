@@ -4,16 +4,21 @@ Si el par de numeros es amigo retorna 1, caso contrario retorna 0. */
 #include <stdio.h>
 int son_amigos(int, int);
 
-int main() {
+int main() 
+{
     int ingreso1, ingreso2;
     
     printf("Ingrese dos numeros\n");
     scanf("%d %d", &ingreso1, &ingreso2);
 
-    if(son_amigos(ingreso1, ingreso2)==1)
+    if (son_amigos(ingreso1, ingreso2) == 1)
+    {
         printf("El par %d y %d son amigos\n", ingreso1, ingreso2);
+    }
     else
+    {
         printf("El par %d y %d NO son amigos\n", ingreso1, ingreso2);
+    }
     
     return 0;
 }
@@ -23,20 +28,30 @@ int main() {
 Dos numeros son amigos si cada uno de ellos es igual
 a la suma de los divisores exactos del otro. */
 
-int son_amigos(int numero1, int numero2) {
+int son_amigos(int numero1, int numero2) 
+{
     int i, j, divisores_num1, divisores_num2;
     divisores_num1 = 0;
     divisores_num2 = 0;
-    for(i=1;i<numero1;i++){
-        if(numero1 % i == 0)
-            divisores_num1+=i;
+    for (i = 1; i < numero1; i++)
+    {
+        if (numero1 % i == 0)
+            divisores_num1 += i;
     }
-    for(j=1;j<numero2;j++) {
-        if(numero2 % j == 0)
-            divisores_num2+=j;
+    for (j = 1; j < numero2; j++) 
+    {
+        if (numero2 % j == 0)
+        {
+            divisores_num2 += j;
+        }
     }
-    if(numero1==divisores_num2 && numero2==divisores_num1)
+    if (numero1 == divisores_num2 && numero2 == divisores_num1)
+    {
         return 1;
-    else return 0;
+    }
+    else 
+    {
+        return 0;
+    }
 }
 
