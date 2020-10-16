@@ -5,27 +5,39 @@ Utilizarla para mostrar los primeros 4 numeros perfectos. */
 #include <stdio.h>
 int es_perfecto(int);
 
-int main() {
+int main() 
+{
     int j, perfectos;
     perfectos = 0 ;
-    while(perfectos<5) {
-        for(j=1;j<9000;j++) {
-            if(es_perfecto(j)==1)
+    while (perfectos < 5) 
+    {
+        for (j = 1; j < 9000; j++) 
+        {
+            if (es_perfecto(j) == 1)
+            {
                 printf("%d es un numero perfecto\n", j);
                 perfectos++;
+            }
         }
     }
     return 0;
 }
 
-int es_perfecto(int numero) {
+int es_perfecto(int numero) 
+{
     int i, divisores;
     divisores = 0;
-    for(i=1;i<numero;i++){
-        if(numero % i == 0)
-            divisores+=i;
+    for (i = 1; i < numero; i++)
+    {
+        if (numero % i == 0)
+            divisores += i;
     }
-    if(divisores==numero)
+    if (divisores == numero)
+    {
         return 1;
-    else return 0;
+    }
+    else 
+    {
+        return 0;
+    }
 }
