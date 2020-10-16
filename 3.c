@@ -18,7 +18,7 @@ int calcular_potencia(x, y)
 {
     int i, resultado;
     resultado=x;
-    for(i=1; i<y; i++) 
+    for (i=1; i<y; i++) 
     {
         resultado *= x;
     }
