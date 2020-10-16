@@ -5,7 +5,8 @@ de numeros primos que se encuentran en el rango determinado por ellos. */
 int es_primo(int);
 int primos_en_rango(int, int);
 
-int main() {
+int main() 
+{
     int ingreso1, ingreso2, cant_primos;
 
     printf("Ingrese dos numeros:\n");
@@ -17,18 +18,28 @@ int main() {
 }
 
 // si el numero es primo retorna 1, caso contrario retona 0
-int es_primo(int numero) {
+int es_primo(int numero) 
+{
     int i;
-    for(i=2; i<numero; i++) {
-        if(numero % i == 0) return 0;
+    for (i = 2; i<numero; i++) 
+    {
+        if (numero % i == 0) 
+        {
+            return 0;
+        }
     }
     return 1;
 }
 
-int primos_en_rango(int num1, int num2) {
+int primos_en_rango(int num1, int num2) 
+{
     int i, contador=0;
-    for(i=num1; i<=num2; i++) {
-        if(es_primo(i)==1) contador++;
+    for (i = num1; i <= num2; i++) 
+    {
+        if (es_primo(i) == 1)
+        {
+            contador++;
+        }
     }
     return contador;
 }
