@@ -22,12 +22,8 @@ int es_primo(int numero)
 {
     int i;
     for (i = 2; i<numero; i++) 
-    {
         if (numero % i == 0) 
-        {
             return 0;
-        }
-    }
     return 1;
 }
 
@@ -35,11 +31,7 @@ int primos_en_rango(int num1, int num2)
 {
     int i, contador=0;
     for (i = num1; i <= num2; i++) 
-    {
         if (es_primo(i) == 1)
-        {
             contador++;
-        }
-    }
     return contador;
 }
