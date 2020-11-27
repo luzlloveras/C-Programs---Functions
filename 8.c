@@ -12,13 +12,9 @@ int main()
     scanf("%d %d", &ingreso1, &ingreso2);
 
     if (son_amigos(ingreso1, ingreso2) == 1)
-    {
         printf("El par %d y %d son amigos\n", ingreso1, ingreso2);
-    }
     else
-    {
         printf("El par %d y %d NO son amigos\n", ingreso1, ingreso2);
-    }
     
     return 0;
 }
@@ -39,19 +35,11 @@ int son_amigos(int numero1, int numero2)
             divisores_num1 += i;
     }
     for (j = 1; j < numero2; j++) 
-    {
         if (numero2 % j == 0)
-        {
             divisores_num2 += j;
-        }
-    }
     if (numero1 == divisores_num2 && numero2 == divisores_num1)
-    {
         return 1;
-    }
     else 
-    {
         return 0;
-    }
 }
 
