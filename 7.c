@@ -10,16 +10,12 @@ int main()
     int j, perfectos;
     perfectos = 0 ;
     while (perfectos < 5) 
-    {
         for (j = 1; j < 9000; j++) 
-        {
             if (es_perfecto(j) == 1)
             {
                 printf("%d es un numero perfecto\n", j);
                 perfectos++;
             }
-        }
-    }
     return 0;
 }
 
@@ -33,11 +29,7 @@ int es_perfecto(int numero)
             divisores += i;
     }
     if (divisores == numero)
-    {
         return 1;
-    }
-    else 
-    {
+    else
         return 0;
-    }
 }
